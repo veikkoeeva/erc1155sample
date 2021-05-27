@@ -1,0 +1,66 @@
+{
+  "name": "erc155-sample",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "A ERC-1155 sample, based on https://github.com/rhlsthrm/solidity-ts-dev-stack-example.git.",
+  "author": "veikkoeeva",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veikkoeeva/erc1155sample.git"
+  },
+  "bugs": {
+    "url": "https://github.com/veikkoeeva/erc1155sample/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "npx hardhat clean",
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "coverage": "npm run build && npx hardhat coverage --temp artifacts --network coverage",
+    "generateContracts": "npx typechain --target ethers-v5 --out-dir ../web/typechain artifacts/contracts/**/Counter.json",
+    "updatePackages": "node updatePackages.js && npm install",
+    "removeNodeModules": "npx rimraf ./**/node_modules"
+  },
+  "homepage": "https://github.com/veikkoeeva/erc1155sample#readme",
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.4",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/contracts": "^4.2.0",
+    "@openzeppelin/contracts-upgradeable": "^4.2.0",
+    "@openzeppelin/hardhat-upgrades": "^1.9.0",
+    "@typechain/ethers-v5": "^7.0.1",
+    "@typechain/hardhat": "^2.2.0",
+    "@types/chai": "^4.2.21",
+    "@types/chai-as-promised": "^7.1.4",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.4.10",
+    "brace-expansion": "^2.0.1",
+    "buidler-gas-reporter": "^0.1.4",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "dotenv": "^10.0.0",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.4.3",
+    "hardhat": "^2.5.0",
+    "hardhat-gas-reporter": "^1.0.4",
+    "jshint": "^2.13.0",
+    "mocha": "^9.0.3",
+    "mocha-explorer-launcher-scripts": "^0.3.0",
+    "npm-check-updates": "^11.8.3",
+    "rimraf": "^3.0.2",
+    "solhint": "^3.3.6",
+    "solhint-plugin-prettier": "^0.0.5",
+    "solidity-coverage": "^0.7.16",
+    "source-map-support": "^0.5.19",
+    "ts-generator": "^0.1.1",
+    "ts-node": "^10.1.0",
+    "typechain": "^5.1.2",
+    "typescript": "^4.3.5"
+  }
+}

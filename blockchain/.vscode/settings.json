@@ -1,0 +1,11 @@
+{
+    "typescript.implementationsCodeLens.enabled": true,
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "mochaExplorer.require": "ts-node/register/files",
+    "mochaExplorer.files": "test/**/*.{j,t}s",
+    "mochaExplorer.ui": "tdd",
+    "mochaExplorer.logpanel": false,
+    "mochaExplorer.autoload": true,
+    "testExplorer.codeLens": true,
+    "testExplorer.gutterDecoration": true
+}

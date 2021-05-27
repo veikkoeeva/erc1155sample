@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "noEmitOnError": true,
+    "lib": ["ESNext", "dom"],
+    "strict": false,
+    "strictNullChecks": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "outDir": "out-tsc",
+    "sourceMap": true,
+    "inlineSources": true,
+    "rootDir": "./",
+    "incremental": true,
+    "forceConsistentCasingInFileNames": true,
+    "removeComments": true,
+    "allowJs": true
+  },
+  "include": [ "*.ts", "./typechain/**/*.ts" ]  
+}

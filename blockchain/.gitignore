@@ -1,0 +1,8 @@
+.vs-code-test/
+node_modules/
+cache/
+build/
+typechain/
+artifacts/
+coverage*
+.env
